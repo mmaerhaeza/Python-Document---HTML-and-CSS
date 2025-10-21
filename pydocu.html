@@ -133,7 +133,7 @@
                         <h5>Let's write our first Python file, called <strong>hello.py</strong>, which can be done in any text editor:</h5>
                         <section>
                             <div>
-                                <h5>hello.py</h5>
+                                <h3>hello.py</h3>
                                 <div>
                                     <code>print("Hello, World!")</code>
                                 </div>
@@ -158,8 +158,10 @@
                         <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
                         <div>
                             <code>>>> print("Hello, World!")</code>
-                                <code>Hello, World!</code>
                         </div>
+                            <div>
+                                <code>Hello, World!</code>
+                            </div>
                         <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
                         <div>
                             <code>C:\Users\Your Name>python myfile.py</code>
@@ -173,8 +175,10 @@
                         <h3>Example</h3>
                         <div>
                             <code>if 5 > 2:</code>
-                                <code>print("Five is greater than two!")</code>
                         </div>
+                            <div>
+                                <code>print("Five is greater than two!")</code>
+                            </div>
                     </div>
                     <p>Python will give you an error if you skip the indentation:</p>
                     <div>
@@ -182,18 +186,26 @@
                         <p>Syntax Error:</p>
                         <div>
                             <code>if 5 > 2:</code>
-                                <code>print("Five is greater than two!")</code>
                         </div>
+                            <div>
+                                <code>print("Five is greater than two!")</code>
+                            </div>
                     </div>
                     <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
                     <div>
                         <h3>Example</h3>
                         <div>
                             <code>if 5 > 2:</code>
-                                <code>print("Five is greater than two!")</code> 
-                                <code>if 5 > 2:</code>
-                                        <code>print("Five is greater than two!")</code>
                         </div>
+                            <div>      
+                                <code>print("Five is greater than two!")</code> 
+                            </div>
+                            <div>  
+                                <code>if 5 > 2:</code>
+                            </div>
+                                    <div>
+                                        <code>print("Five is greater than two!")</code>
+                                    </div>
                         </div>
                     <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
                     <div>
@@ -201,9 +213,13 @@
                         <p>Syntax Error:</p>
                         <div>
                             <code>if 5 > 2:</code>
-                                <code>print("Five is greater than two!")</code>
-                                        <code>print("Five is greater than two!")</code>
                         </div>
+                            <div>    
+                                <code>print("Five is greater than two!")</code>
+                            </div>
+                                    <div>    
+                                        <code>print("Five is greater than two!")</code>
+                                    </div>    
                     </div>
             </section>
             <section class="main-section" id="Python_Output">
@@ -221,31 +237,47 @@
                     <h3>Example</h3>
                     <div>
                         <code>print("Hello World!")</code>
-                        <code>print("I am learning Python.")</code>
-                        <code>print("It is awesome!")</code>
                     </div>
+                        <div>   
+                            <code>print("I am learning Python.")</code>
+                        </div> 
+                        <div>
+                            <code>print("It is awesome!")</code>
+                        </div>
                 </div>
                 <h1>Double Quotes</h1>
                 <p>Text in Python must be inside quotes. You can use either <strong>"</strong> double quotes or <strong>'</strong> single quotes:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print("This will work!")</code>
-                    <code>print('This will also work!')</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print("This will work!")</code>
+                    </div>
+                    <div>
+                        <code>print('This will also work!')</code>
+                    </div>
                 </div>
                 <p>If you forget to put the text inside quotes, Python will give an error:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print(This will cause an error)</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print(This will cause an error)</code>
+                    </div>
                     <p>Result:</p>
-                    <code>SyntaxError: invalid syntax.</code>
+                    <div>
+                        <code>SyntaxError: invalid syntax.</code>
+                    </div>
                 </div>
                 <h1>Print Without a New Line</h1>
                 <p>By default, the <strong>print()</strong> function ends with a new line.</p>
                 <p>If you want to print multiple words on the same line, you can use the <strong>end</strong> parameter:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print("Hello World!", end=" ")</code>
-                    <code>print("I will print on the same line.")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print("Hello World!", end=" ")</code>
+                    </div>
+                    <div>
+                        <code>print("I will print on the same line.")</code>
+                    </div>
                 </div>
                 <p>Note that we add a space after <strong>end=" "</strong> for better readability.</p>
             </section>
@@ -258,57 +290,75 @@
                 <h1>Creating a Comment</h1>
                 <p>Comments starts with a <strong>#</strong>, and Python will ignore them:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>#This is a comment</code>
-                    <code>print("Hello, World!")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>#This is a comment</code>
+                    </div>
+                    <div>
+                        <code>print("Hello, World!")</code>
+                    </div>
                 </div>
                 <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print("Hello, World!") #This is a comment</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print("Hello, World!") #This is a comment</code>
+                    </div>
                 </div>
                 <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>#print("Hello, World!")</code>
-                    <code>print("Cheers, Mate!")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>#print("Hello, World!")</code>
+                    </div>
+                    <div>
+                        <code>print("Cheers, Mate!")</code>
+                    </div>
                 </div>
                 <h1>Multiline Comments</h1>
                 <p>Python does not really have a syntax for multiline comments.</p>
                 <p>To add a multiline comment you could insert a <strong>#</strong> for each line:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>#This is a comment</code>
-                    <code>#written in</code>
-                    <code>#more than just one line</code>
-                    <code>print("Hello, World!")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>#This is a comment</code>
+                    </div>
+                    <div>
+                        <code>#written in</code>
+                    </div>
+                    <div>
+                        <code>#more than just one line</code>
+                    </div>
+                    <div>
+                        <code>print("Hello, World!")</code>
+                    </div>
                 </div>
                 <p>Or, not quite as intended, you can use a multiline string.</p>
                 <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
                 <div>
-                    <h1>Example</h1>
+                    <h3>Example</h3>
                     <div>
-                    <code>"""</code>
+                        <code>"""</code>
                     </div>
 
                     <div>
-                    <code>This is a comment</code>
+                        <code>This is a comment</code>
                     </div>
 
                     <div>
-                    <code>written in</code>
+                        <code>written in</code>
                     </div>
 
                     <div>
-                    <code>more than just one line</code>
+                        <code>more than just one line</code>
                     </div>
 
                     <div>
-                    <code>"""</code>
+                        <code>"""</code>
                     </div>
 
                     <div>
-                    <code>print("Hello, World!")</code>
+                        <code>print("Hello, World!")</code>
                     </div>
                 </div>
                 <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.</p>
