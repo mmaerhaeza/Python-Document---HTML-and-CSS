@@ -42,14 +42,13 @@
         <main id="main-doc">
             <section class="main-section" id="Python_Home">
                 <header>Python Home</header>
-                <article>
                     <div>
                         <h1>Learn Python</h1>
                         <p>Python is a popular programming language.</p>
                         <p>Python can be used on a server to create web applications.</p>
                     </div>
                     <div>
-                        <h1>Learning by Examples</h1>
+                        <h3>Learning by Examples</h3>
                         <p>Try in:</p>
                         <ul>
                             <li>Online Compiler</li>
@@ -57,10 +56,11 @@
                         </ul>
                     </div>
                     <div>
-                        <h1>Example</h1>
-                        <code>print("Hello, World!")</code>
+                        <h3>Example</h3>
+                        <div>
+                            <code>print("Hello, World!")</code>
+                        </div>
                     </div>
-                </article>
             </section>
             <section class="main-section" id="Python_Introduction">
                 <header>Python Introduction</header>
@@ -102,11 +102,13 @@
                         <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
                     </ul>
                     <div>
-                        <h1>Example</h1>
-                        <code>print("Hello, World!")</code>
+                        <h3>Example</h3>
+                        <div>
+                            <code>print("Hello, World!")</code>
+                        </div>
                     </div>
                     <div>
-                        <h3>Video: Python Introduction</h3>
+                        <h4>Video: Python Introduction</h4>
                         <a href="https://youtu.be/_uQrJ0TkZlc?si=KxZ6mbFcuSRz_u4H">Python Full Course for Beginners</a>
                     </div>
                 </article>
@@ -118,84 +120,110 @@
                         <h1>Python Install</h1>
                         <p>Many PCs and Macs will have python already installed.</p>
                         <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
-                        <code>C:\Users\Your Name>python --version</code>
+                        <div>
+                            <code>C:\Users\Your Name>python --version</code>
+                        </div>
                         <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
-                        <code>python --version</code>
+                        <div>
+                            <code>python --version</code>
+                        </div>
                         <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/">Python</a></p>
                         <h1>Python Quick Start</h1>
                         <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
                         <h5>Let's write our first Python file, called <strong>hello.py</strong>, which can be done in any text editor:</h5>
                         <section>
-                            <h5>hello.py</h5>
-                            <code>print("Hello, World!")</code>
+                            <div>
+                                <h5>hello.py</h5>
+                                <div>
+                                    <code>print("Hello, World!")</code>
+                                </div>
+                            </div>
                         </section>
                         <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
-                        <code>C:\Users\Your Name>python hello.py</code>
+                        <div>
+                            <code>C:\Users\Your Name>python hello.py</code>
+                        </div>
                         <p>The output should be:</p>
-                        <code>Hello, World!</code>
+                        <div>
+                            <code>Hello, World!</code>
+                        </div>
                         <p>Congratulations, you have written and executed your first Python program.</p>
                     </section>
                 </article>
             </section>
             <section class="main-section" id="Python_Syntax">
-                <article>
                     <section>
                         <header>Python Syntax</header>
                         <h1>Execute Python Syntax</h1>
                         <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
-                        <code>>>> print("Hello, World!")
-                              Hello, World!</code>
+                        <div>
+                            <code>>>> print("Hello, World!")</code>
+                                <code>Hello, World!</code>
+                        </div>
                         <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
-                        <code>C:\Users\Your Name>python myfile.py</code>
+                        <div>
+                            <code>C:\Users\Your Name>python myfile.py</code>
+                        </div>
                     </section>
                     <h1>Python Indentation</h1>
                     <p>Indentation refers to the spaces at the beginning of a code line.</p>
                     <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
                     <p>Python uses indentation to indicate a block of code.</p>
                     <div>
-                        <h1>Example</h1>
-                        <code>if 5 > 2:
-                                print("Five is greater than two!")</code>
+                        <h3>Example</h3>
+                        <div>
+                            <code>if 5 > 2:</code>
+                                <code>print("Five is greater than two!")</code>
+                        </div>
                     </div>
                     <p>Python will give you an error if you skip the indentation:</p>
                     <div>
-                        <h1>Example</h1>
+                        <h3>Example</h3>
                         <p>Syntax Error:</p>
-                        <code>if 5 > 2:
-                              print("Five is greater than two!")</code>
+                        <div>
+                            <code>if 5 > 2:</code>
+                                <code>print("Five is greater than two!")</code>
+                        </div>
                     </div>
                     <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
                     <div>
-                        <h1>Example</h1>
-                        <code>if 5 > 2:
-                               print("Five is greater than two!") 
-                              if 5 > 2:
-                                      print("Five is greater than two!")</code>
+                        <h3>Example</h3>
+                        <div>
+                            <code>if 5 > 2:</code>
+                                <code>print("Five is greater than two!")</code> 
+                                <code>if 5 > 2:</code>
+                                        <code>print("Five is greater than two!")</code>
+                        </div>
                         </div>
                     <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
                     <div>
-                        <h1>Example</h1>
+                        <h3>Example</h3>
                         <p>Syntax Error:</p>
-                        <code>if 5 > 2:
-                               print("Five is greater than two!")
-                                      print("Five is greater than two!")</code>
+                        <div>
+                            <code>if 5 > 2:</code>
+                                <code>print("Five is greater than two!")</code>
+                                        <code>print("Five is greater than two!")</code>
+                        </div>
                     </div>
-                </article>
             </section>
             <section class="main-section" id="Python_Output">
                 <header>Python Output</header>
                 <h1>Print Text</h1>
                 <p>You have already learned that you can use the print() function to display text or output values:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print("Hello World!")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print("Hello World!")</code>
+                    </div>
                 </div>
                 <p>You can use the print() function as many times as you want. Each call prints text on a new line by default:</p>
                 <div>
-                    <h1>Example</h1>
-                    <code>print("Hello World!")</code>
-                    <code>print("I am learning Python.")</code>
-                    <code>print("It is awesome!")</code>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print("Hello World!")</code>
+                        <code>print("I am learning Python.")</code>
+                        <code>print("It is awesome!")</code>
+                    </div>
                 </div>
                 <h1>Double Quotes</h1>
                 <p>Text in Python must be inside quotes. You can use either <strong>"</strong> double quotes or <strong>'</strong> single quotes:</p>
@@ -223,6 +251,7 @@
             </section>
             <section class="main-section" id="Python_Comments">
                 <header>Python Comments</header>
+                <h1>Comments</h1>
                 <p>Comments can be used to explain Python code.</p>
                 <p>Comments can be used to make the code more readable.</p>
                 <p>Comments can be used to prevent execution when testing code.</p>
@@ -286,6 +315,94 @@
             </section>
             <section class="main-section" id="Python_Variables">
                 <header>Python Variables</header>
+                <h1>Variables</h1>
+                <p>Variables are containers for storing data values.</p>
+                <h1>Creating Variables</h1>
+                <p>Python has no command for declaring a variable.</p>
+                <p>A variable is created the moment you first assign a value to it.</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>x = 4       # x is of type int</code>
+                    </div>
+
+                    <div>
+                        <code>x = "Sally" # x is now of type str</code>
+                    </div>
+
+                    <div>
+                        <code>print(x)</code>
+                    </div>
+                </div>
+                <h1>Casting</h1>
+                <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                    <div>
+                        <h3>Example</h3>
+                        <div>
+                            <code>x = str(3)    # x will be '3'</code>
+                        </div>
+
+                        <div>
+                            <code>y = int(3)    # y will be 3</code>
+                        </div>
+
+                        <div>
+                            <code>z = float(3)  # z will be 3.0</code>
+                        </div>
+                    </div>
+                <h1>Get the Type</h1>
+                <p>You can get the data type of a variable with the <strong>type()</strong> function.</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>x = 5</code>
+                    </div>
+
+                    <div>
+                        <code>y = "John"</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                </div>
+                <h1>Single or Double Quotes?</h1>
+                <p>String variables can be declared either by using single or double quotes:</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>x = "John"</code>
+                    </div>
+
+                    <div>
+                        <code># is the same as</code>
+                    </div>
+
+                    <div>
+                        <code>x = 'John'</code>
+                    </div>
+                </div>
+                <h1>Case-Sensitive</h1>
+                <p>Variable names are case-sensitive.</p>
+                <div>
+                    <h3>Example</h3>
+                    <p>This will create two variables:</p>
+                    <div>
+                        <code>a = 4</code>
+                    </div>
+
+                    <div>
+                        <code>A = "Sally"</code>
+                    </div>
+
+                    <div>
+                        <code>#A will not overwrite a</code>
+                    </div>
+                </div>
             </section>
             <section class="main-section" id="Python_Data_Types">
                 <header>Python Data Types</header>
