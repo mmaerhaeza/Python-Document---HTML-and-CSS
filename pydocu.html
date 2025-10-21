@@ -456,12 +456,343 @@
             </section>
             <section class="main-section" id="Python_Data_Types">
                 <header>Python Data Types</header>
+                <h1>Built-in Data Types</h1>
+                <p>In programming, data type is an important concept.</p>
+                <p>Variables can store data of different types, and different types can do different things.</p>
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Text Type:</td>
+                            <td>str</td>
+                        </tr>
+                        <tr>
+                            <td>Numeric Types:</td>
+                            <td>int, float, complex</td>
+                        </tr>
+                        <tr>
+                            <td>Sequence Types:</td>
+                            <td>list, tuple, range</td>
+                        </tr>
+                        <tr>
+                            <td>Mapping Type:</td>
+                            <td>dict</td>
+                        </tr>
+                        <tr>
+                            <td>Set Types:</td>
+                            <td>set, frozenset</td>
+                        </tr>
+                        <tr>
+                            <td>Boolean Type:</td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            <td>Binary Types:</td>
+                            <td>bytes, bytearray, memoryview</td>
+                        </tr>
+                        <tr>
+                            <td>None Type:</td>
+                            <td>NoneType</td>
+                        </tr>
+                    </table>
+                </div>
+                <h1>Getting the Data Type</h1>
+                <p>You can get the data type of any object by using the <strong>type()</strong> function:</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>x = 5</code>
+                    </div>
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                </div>
+                <h1>Setting the Data Type</h1>
+                <p>In Python, the data type is set when you assign a value to a variable:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Example</th>
+                            <th>Data Type</th>
+                        </tr>
+                        <tr>
+                            <td>x = "Hello World"</td>
+                            <td>str</td>
+                        </tr>
+                        <tr>
+                            <td>x = 20</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>x = 20.5</td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td>x = 1j</td>
+                            <td>complex</td>
+                        </tr>
+                        <tr>
+                            <td>x = ["apple", "banana", "cherry"]</td>
+                            <td>list</td>
+                        </tr>
+                        <tr>
+                            <td>x = ("apple", "banana", "cherry")</td>
+                            <td>tuple</td>
+                        </tr>
+                        <tr>
+                            <td>x = range(6)</td>
+                            <td>range</td>
+                        </tr>
+                        <tr>
+                            <td>x = {"name" : "John", "age" : 36}</td>
+                            <td>dict</td>
+                        </tr>
+                        <tr>
+                            <td>x = {"apple", "banana", "cherry"}</td>
+                            <td>set</td>
+                        </tr>
+                        <tr>
+                            <td>x = frozenset({"apple", "banana", "cherry"})</td>
+                            <td>frozenset</td>
+                        </tr>
+                        <tr>
+                            <td>x = True</td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            <td>x = b"Hello"</td>
+                            <td>bytes</td>
+                        </tr>
+                        <tr>
+                            <td>x = bytearray(5)</td>
+                            <td>bytearray</td>
+                        </tr>
+                        <tr>
+                            <td>x = memoryview(bytes(5))</td>
+                            <td>memoryview</td>
+                        </tr>
+                        <tr>
+                            <td>x = None</td>
+                            <td>NoneType</td>
+                        </tr>
+                    </table>
+                </div>
+                <h1>Setting the Specific Data Type</h1>
+                <p>If you want to specify the data type, you can use the following constructor functions:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Example</th>
+                            <th>Data Type</th>
+                        </tr>
+                        <tr>
+                            <td>x = str("Hello World")</td>
+                            <td>str</td>
+                        </tr>
+                        <tr>
+                            <td>x = int(20)</td>
+                            <td>int</td>
+                        </tr>
+                        <tr>
+                            <td>x = float(20.5)</td>
+                            <td>float</td>
+                        </tr>
+                        <tr>
+                            <td>x = complex(1j)</td>
+                            <td>complex</td>
+                        </tr>
+                        <tr>
+                            <td>x = list(("apple", "banana", "cherry"))</td>
+                            <td>list</td>
+                        </tr>
+                        <tr>
+                            <td>x = tuple(("apple", "banana", "cherry"))</td>
+                            <td>tuple</td>
+                        </tr>
+                        <tr>
+                            <td>x = range(6)</td>
+                            <td>range</td>
+                        </tr>
+                        <tr>
+                            <td>x = dict(name="John", age=36)</td>
+                            <td>dict</td>
+                        </tr>
+                        <tr>
+                            <td>x = set(("apple", "banana", "cherry"))</td>
+                            <td>set</td>
+                        </tr>
+                        <tr>
+                            <td>x = frozenset(("apple", "banana", "cherry"))</td>
+                            <td>frozenset</td>
+                        </tr>
+                        <tr>
+                            <td>x = bool(5)</td>
+                            <td>bool</td>
+                        </tr>
+                        <tr>
+                            <td>x = bytes(5)</td>
+                            <td>bytes</td>
+                        </tr>
+                        <tr>
+                            <td>x = bytearray(5)</td>
+                            <td>bytearray</td>
+                        </tr>
+                        <tr>
+                            <td>x = memoryview(bytes(5))</td>
+                            <td>memoryview</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
             <section class="main-section" id="Python_Numbers">
                 <header>Python Numbers</header>
+                <h1>Numbers</h1>
+                <p>There are three numeric types in Python:</p>
+                <ul>
+                    <li><strong>int</strong></li>
+                    <li><strong>float</strong></li>
+                    <li><strong>complex</strong></li>
+                </ul>
+                <p>Variables of numeric types are created when you assign a value to them:</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>x = 1    # int</code>
+                    </div>
+                    <div>
+                        <code>y = 2.8  # float</code>
+                    </div>
+                    <div>
+                        <code>z = 1j   # complex</code>
+                    </div>
+                </div>
+                <p>To verify the type of any object in Python, use the type() function:</p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                    <div>
+                        <code>print(type(z))</code>
+                    </div>
+                </div>
+                <h1>Int</h1>
+                <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+                <div>
+                    <h3>Example</h3>
+                    <p>Integers:</p>
+                    <div>
+                        <code>x = 1</code>
+                    </div>
+                    <div>
+                        <code>y = 35656222554887711</code>
+                    </div>
+                    <div>
+                        <code>z = -3255522</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                    <div>
+                        <code>print(type(z))</code>
+                    </div>
+                </div>
+                <h1>Float</h1>
+                <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+                <div>
+                    <h3>Example</h3>
+                    <p>Floats:</p>
+                    <div>
+                        <code>x = 1.10</code>
+                    </div>
+                    <div>
+                        <code>y = 1.0</code>
+                    </div>
+                    <div>
+                        <code>z = -35.59</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                    <div>
+                        <code>print(type(z))</code>
+                    </div>
+                </div>
+                <p>Float can also be scientific numbers with an "e" to indicate the power of 10</p>
+                <div>
+                    <h3>Example</h3>
+                    <p>Floats:</p>
+                    <div>
+                        <code>x = 35e3</code>
+                    </div>
+                    <div>
+                        <code>y = 12E4</code>
+                    </div>
+                    <div>
+                        <code>z = -87.7e100</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                    <div>
+                        <code>print(type(z))</code>
+                    </div>
+                </div>
+                <h1>Complex</h1>
+                <p>Complex numbers are written with a "j" as the imaginary part:</p>
+                <div>
+                    <h3>Example</h3>
+                    <p>Complex:</p>
+                    <div>
+                        <code>x = 3+5j</code>
+                    </div>
+                    <div>
+                        <code>y = 5j</code>
+                    </div>
+                    <div>
+                        <code>z = -5j</code>
+                    </div>
+
+                    <div>
+                        <code>print(type(x))</code>
+                    </div>
+                    <div>
+                        <code>print(type(y))</code>
+                    </div>
+                    <div>
+                        <code>print(type(z))</code>
+                    </div>
+                </div>
             </section>
             <section class="main-section" id="References">
                 <header>References</header>
+                <div>
+                    <h4>Video: Python Tutorial</h4>
+                        <a href="https://www.youtube.com/watch?v=xkZMUX_oQX4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=1">Introduction</a>
+                    <h4>Video: Python Tutorial</h4>
+                        <a href="https://www.youtube.com/watch?v=z116jFWdfQc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=2">Get Started</a>
+                    <h4>Video: Python Tutorial</h4>
+                        <a href="https://www.youtube.com/watch?v=4WVZBtqqVM4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=3">Syntax</a>
+                    <h4>Video: Python Tutorial</h4>
+                        <a href="https://www.youtube.com/watch?v=9wouY9nWe0k&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=4">Comments</a>
+                    <h4>Video: Python Tutorial</h4>
+                        <a href="https://www.youtube.com/watch?v=Gf9wLsCJDqc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=5">Variables</a>
+                </div>
             </section>
         </main>
     </body>
