@@ -1,4 +1,74 @@
 body {
     font-family: sans-serif, 'Arial Narrow', Arial, 'Franklin Gothic Medium';
     margin: 1rem;
+    background-color: #f1f1f1;
+}
+
+header {
+    font-weight: bold;
+    font-size: larger;
+    border: 4px outset;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    background-color: #f7f7f7;
+}
+
+.python {
+    text-align: center;
+}
+
+#navbar {
+    margin: auto;
+    padding: auto;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#navbar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 18px;
+    
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#navbar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#main-doc{
+  margin-left: 200px;
+  padding: 1rem;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  
 }
