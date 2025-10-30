@@ -10,8 +10,8 @@ header {
     border: 4px outset;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-inline-start: 5px;
-    padding-inline-end: 5px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
     background-color: #f7f7f7;
 }
 
@@ -27,7 +27,11 @@ header {
     position: fixed;
     height: 100%;
     overflow: auto;
+    cursor: pointer;
 }
+
+#navbar a:hover,
+#navbar a:focus { background: rgba(255,255,255,0.06); color: gray; outline: none; }
 
 #navbar a {
     display: block;
