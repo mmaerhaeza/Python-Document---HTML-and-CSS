@@ -22,7 +22,7 @@ header {
 #navbar {
     margin: auto;
     padding: auto;
-    width: 200px;
+    width: 300px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -54,7 +54,7 @@ nav ul {
 }
 
 #main-doc{
-  margin-left: 200px;
+  margin-left: 300px;
   padding: 1rem;
 }
 
@@ -70,5 +70,92 @@ code {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
-  
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.alink {
+    
+    padding-left: 1rem;
+    color: #555;
+    text-decoration: none;
+}
+
+a:link {
+  color: #555;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.ex {
+  border-style: solid;
+  border-color: #f7f7f7;
+  border-radius: 5px;
+  border-width: 2px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.tbl {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.tbl-in, td {
+  background-color: #f7f7f7;
+  text-align: left;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.td-title {
+  font-weight: bold;
+}
+
+.ex h3 {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+div {
+  margin: 5px;
+}
+
+p {
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+}
+
+h1 {
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+}
+
+.circle li{
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+
+h3 {
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
 }

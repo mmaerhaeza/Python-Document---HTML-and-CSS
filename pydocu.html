@@ -54,12 +54,12 @@
                     <div>
                         <h3>Learning by Examples</h3>
                         <p>Try in:</p>
-                        <ul>
+                        <ul class="circle">
                             <li>Online Compiler</li>
                             <li>IDE</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <div>
                             <code>print("Hello, World!")</code>
@@ -72,14 +72,14 @@
                     <h1>What is Python?</h1>
                     <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
                     <p>It is use for:</p>
-                    <ul>
+                    <ul class="circle">
                         <li>web development (server-side),</li>
                         <li>software development,</li>
                         <li>mathematics,</li>
                         <li>system scripting.</li>
                     </ul>
                     <h3>What can Python do?</h3>
-                    <ul>
+                    <ul class="circle">
                         <li>Python can be used on a server to create web applications.</li>
                         <li>Python can be used alongside software to create workflows.</li>
                         <li>Python can connect to database systems. It can also read and modify files.</li>
@@ -87,7 +87,7 @@
                         <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
                     </ul>
                     <h1>Why Python?</h1>
-                    <ul>
+                    <ul class="circle">
                         <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
                         <li>Python has a simple syntax similar to the English language.</li>
                         <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
@@ -95,25 +95,25 @@
                         <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
                     </ul>
                     <h3>Good to know</h3>
-                    <ul>
+                    <ul class="circle">
                         <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial.</li>
                         <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
                     </ul>
                     <h3>Python Syntax compared to other programming languages</h3>
-                    <ul>
+                    <ul class="circle">
                         <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
                         <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
                         <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
                     </ul>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <div>
                             <code>print("Hello, World!")</code>
                         </div>
                     </div>
-                    <div>
-                        <h4>Video: Python Introduction</h4>
-                        <a href="https://youtu.be/_uQrJ0TkZlc?si=KxZ6mbFcuSRz_u4H">Python Full Course for Beginners</a>
+                    <div class="alink">
+                        <h4>Video: Python Introduction <a href="https://youtu.be/_uQrJ0TkZlc?si=KxZ6mbFcuSRz_u4H">Python Full Course for Beginners</a></h4>
+                        
                     </div>
                 </article>
             </section>
@@ -134,7 +134,7 @@
                         <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/">Python</a></p>
                         <h1>Python Quick Start</h1>
                         <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
-                        <h5>Let's write our first Python file, called <strong>hello.py</strong>, which can be done in any text editor:</h5>
+                        <p>Let's write our first Python file, called <strong>hello.py</strong>, which can be done in any text editor:</p>
                         <section>
                             <div>
                                 <h3>hello.py</h3>
@@ -175,7 +175,7 @@
                     <p>Indentation refers to the spaces at the beginning of a code line.</p>
                     <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
                     <p>Python uses indentation to indicate a block of code.</p>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <div>
                             <code>if 5 > 2:</code>
@@ -185,7 +185,7 @@
                             </div>
                     </div>
                     <p>Python will give you an error if you skip the indentation:</p>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <p>Syntax Error:</p>
                         <div>
@@ -196,7 +196,7 @@
                             </div>
                     </div>
                     <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <div>
                             <code>if 5 > 2:</code>
@@ -212,7 +212,7 @@
                                     </div>
                         </div>
                     <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <p>Syntax Error:</p>
                         <div>
@@ -230,14 +230,14 @@
                 <header>Python Output</header>
                 <h1>Print Text</h1>
                 <p>You have already learned that you can use the print() function to display text or output values:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print("Hello World!")</code>
                     </div>
                 </div>
                 <p>You can use the print() function as many times as you want. Each call prints text on a new line by default:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print("Hello World!")</code>
@@ -251,7 +251,7 @@
                 </div>
                 <h1>Double Quotes</h1>
                 <p>Text in Python must be inside quotes. You can use either <strong>"</strong> double quotes or <strong>'</strong> single quotes:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print("This will work!")</code>
@@ -261,7 +261,7 @@
                     </div>
                 </div>
                 <p>If you forget to put the text inside quotes, Python will give an error:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print(This will cause an error)</code>
@@ -274,7 +274,7 @@
                 <h1>Print Without a New Line</h1>
                 <p>By default, the <strong>print()</strong> function ends with a new line.</p>
                 <p>If you want to print multiple words on the same line, you can use the <strong>end</strong> parameter:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print("Hello World!", end=" ")</code>
@@ -293,7 +293,7 @@
                 <p>Comments can be used to prevent execution when testing code.</p>
                 <h1>Creating a Comment</h1>
                 <p>Comments starts with a <strong>#</strong>, and Python will ignore them:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>#This is a comment</code>
@@ -303,14 +303,14 @@
                     </div>
                 </div>
                 <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print("Hello, World!") #This is a comment</code>
                     </div>
                 </div>
                 <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>#print("Hello, World!")</code>
@@ -322,7 +322,7 @@
                 <h1>Multiline Comments</h1>
                 <p>Python does not really have a syntax for multiline comments.</p>
                 <p>To add a multiline comment you could insert a <strong>#</strong> for each line:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>#This is a comment</code>
@@ -339,7 +339,7 @@
                 </div>
                 <p>Or, not quite as intended, you can use a multiline string.</p>
                 <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>"""</code>
@@ -374,7 +374,7 @@
                 <h1>Creating Variables</h1>
                 <p>Python has no command for declaring a variable.</p>
                 <p>A variable is created the moment you first assign a value to it.</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>x = 4       # x is of type int</code>
@@ -390,7 +390,7 @@
                 </div>
                 <h1>Casting</h1>
                 <p>If you want to specify the data type of a variable, this can be done with casting.</p>
-                    <div>
+                    <div class="ex">
                         <h3>Example</h3>
                         <div>
                             <code>x = str(3)    # x will be '3'</code>
@@ -406,7 +406,7 @@
                     </div>
                 <h1>Get the Type</h1>
                 <p>You can get the data type of a variable with the <strong>type()</strong> function.</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>x = 5</code>
@@ -426,7 +426,7 @@
                 </div>
                 <h1>Single or Double Quotes?</h1>
                 <p>String variables can be declared either by using single or double quotes:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>x = "John"</code>
@@ -442,7 +442,7 @@
                 </div>
                 <h1>Case-Sensitive</h1>
                 <p>Variable names are case-sensitive.</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <p>This will create two variables:</p>
                     <div>
@@ -464,45 +464,45 @@
                 <p>In programming, data type is an important concept.</p>
                 <p>Variables can store data of different types, and different types can do different things.</p>
                 <p>Python has the following data types built-in by default, in these categories:</p>
-                <div>
+                <div class="tbl">
                     <table>
-                        <tr>
-                            <td>Text Type:</td>
+                        <tr >
+                            <td class="td-title">Text Type:</td>
                             <td>str</td>
                         </tr>
                         <tr>
-                            <td>Numeric Types:</td>
+                            <td class="td-title">Numeric Types:</td>
                             <td>int, float, complex</td>
                         </tr>
                         <tr>
-                            <td>Sequence Types:</td>
+                            <td class="td-title">Sequence Types:</td>
                             <td>list, tuple, range</td>
                         </tr>
                         <tr>
-                            <td>Mapping Type:</td>
+                            <td class="td-title">Mapping Type:</td>
                             <td>dict</td>
                         </tr>
                         <tr>
-                            <td>Set Types:</td>
+                            <td class="td-title">Set Types:</td>
                             <td>set, frozenset</td>
                         </tr>
                         <tr>
-                            <td>Boolean Type:</td>
+                            <td class="td-title">Boolean Type:</td>
                             <td>bool</td>
                         </tr>
                         <tr>
-                            <td>Binary Types:</td>
+                            <td class="td-title">Binary Types:</td>
                             <td>bytes, bytearray, memoryview</td>
                         </tr>
                         <tr>
-                            <td>None Type:</td>
+                            <td class="td-title">None Type:</td>
                             <td>NoneType</td>
                         </tr>
                     </table>
                 </div>
                 <h1>Getting the Data Type</h1>
                 <p>You can get the data type of any object by using the <strong>type()</strong> function:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>x = 5</code>
@@ -513,11 +513,11 @@
                 </div>
                 <h1>Setting the Data Type</h1>
                 <p>In Python, the data type is set when you assign a value to a variable:</p>
-                <div>
+                <div class="tbl">
                     <table>
-                        <tr>
-                            <th>Example</th>
-                            <th>Data Type</th>
+                        <tr >
+                            <th class="tbl-in">Example</th>
+                            <th class="tbl-in">Data Type</th>
                         </tr>
                         <tr>
                             <td>x = "Hello World"</td>
@@ -583,11 +583,11 @@
                 </div>
                 <h1>Setting the Specific Data Type</h1>
                 <p>If you want to specify the data type, you can use the following constructor functions:</p>
-                <div>
+                <div class="tbl">
                     <table>
                         <tr>
-                            <th>Example</th>
-                            <th>Data Type</th>
+                            <th class="tbl-in">Example</th>
+                            <th class="tbl-in">Data Type</th>
                         </tr>
                         <tr>
                             <td>x = str("Hello World")</td>
@@ -652,13 +652,13 @@
                 <header>Python Numbers</header>
                 <h1>Numbers</h1>
                 <p>There are three numeric types in Python:</p>
-                <ul>
+                <ul class="circle">
                     <li><strong>int</strong></li>
                     <li><strong>float</strong></li>
                     <li><strong>complex</strong></li>
                 </ul>
                 <p>Variables of numeric types are created when you assign a value to them:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>x = 1    # int</code>
@@ -671,7 +671,7 @@
                     </div>
                 </div>
                 <p>To verify the type of any object in Python, use the type() function:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <div>
                         <code>print(type(x))</code>
@@ -685,7 +685,7 @@
                 </div>
                 <h1>Int</h1>
                 <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <p>Integers:</p>
                     <div>
@@ -710,7 +710,7 @@
                 </div>
                 <h1>Float</h1>
                 <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <p>Floats:</p>
                     <div>
@@ -734,7 +734,7 @@
                     </div>
                 </div>
                 <p>Float can also be scientific numbers with an "e" to indicate the power of 10</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <p>Floats:</p>
                     <div>
@@ -759,7 +759,7 @@
                 </div>
                 <h1>Complex</h1>
                 <p>Complex numbers are written with a "j" as the imaginary part:</p>
-                <div>
+                <div class="ex">
                     <h3>Example</h3>
                     <p>Complex:</p>
                     <div>
@@ -785,17 +785,17 @@
             </section>
             <section class="main-section" id="References">
                 <header>References</header>
-                <div>
-                    <h4>Video: Python Tutorial</h4>
-                        <a href="https://www.youtube.com/watch?v=xkZMUX_oQX4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=1">Introduction</a>
-                    <h4>Video: Python Tutorial</h4>
-                        <a href="https://www.youtube.com/watch?v=z116jFWdfQc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=2">Get Started</a>
-                    <h4>Video: Python Tutorial</h4>
-                        <a href="https://www.youtube.com/watch?v=4WVZBtqqVM4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=3">Syntax</a>
-                    <h4>Video: Python Tutorial</h4>
-                        <a href="https://www.youtube.com/watch?v=9wouY9nWe0k&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=4">Comments</a>
-                    <h4>Video: Python Tutorial</h4>
-                        <a href="https://www.youtube.com/watch?v=Gf9wLsCJDqc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=5">Variables</a>
+                <div class="alink">
+                    <h4>Video: Python Tutorial <a href="https://www.youtube.com/watch?v=xkZMUX_oQX4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=1">Introduction</a></h4>
+                        
+                    <h4>Video: Python Tutorial <a href="https://www.youtube.com/watch?v=z116jFWdfQc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=2">Get Started</a></h4>
+                        
+                    <h4>Video: Python Tutorial <a href="https://www.youtube.com/watch?v=4WVZBtqqVM4&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=3">Syntax</a></h4>
+                        
+                    <h4>Video: Python Tutorial <a href="https://www.youtube.com/watch?v=9wouY9nWe0k&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=4">Comments</a></h4>
+                        
+                    <h4>Video: Python Tutorial <a href="https://www.youtube.com/watch?v=Gf9wLsCJDqc&list=PLP9IO4UYNF0UgPfkTBECSKIJGdc_9FYZ9&index=5">Variables</a></h4>
+                        
                 </div>
             </section>
         </main>
